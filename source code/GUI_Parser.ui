@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GUI_ParserClass</class>
+ <widget class="QMainWindow" name="GUI_ParserClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1740</width>
+    <height>887</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Bradley Hand ITC</family>
+    <pointsize>20</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>GUI_Parser</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox_code">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>401</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>楷体</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>源代码</string>
+    </property>
+    <widget class="QTextEdit" name="textEdit_code">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>381</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Lucida Console</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="cursor" stdset="0">
+      <cursorShape>IBeamCursor</cursorShape>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_code">
+     <property name="geometry">
+      <rect>
+       <x>131</x>
+       <y>4</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Lucida Console</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_code">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>320</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文行楷</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>保存</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_codeopen">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>320</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>打开</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_grammar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>390</y>
+      <width>441</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>华文楷体</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>文法规则</string>
+    </property>
+    <widget class="QTextEdit" name="textEdit_grammar">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>50</y>
+       <width>411</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Courier New</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_grammar">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>0</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Lucida Console</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_grammar">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>380</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文行楷</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>保存</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_grammaropen">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>380</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>打开</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_item">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>20</y>
+      <width>651</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>华文行楷</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>项目集规范族</string>
+    </property>
+    <widget class="QTextBrowser" name="textBrowser_item">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>611</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Source Code Pro</family>
+       <pointsize>10</pointsize>
+       <italic>false</italic>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_items">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>320</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>保存</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_set">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>410</y>
+      <width>791</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Pristina</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>First/Follow集</string>
+    </property>
+    <widget class="QGroupBox" name="groupBox_first">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>371</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bradley Hand ITC</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>First Set</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_first">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>351</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_first">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>320</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>楷体</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>保存</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_follow">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>40</y>
+       <width>361</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Ink Free</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>Follow Set</string>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_follow">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Source Code Pro Light</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_follow">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>320</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>楷体</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>保存</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_lex">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>40</y>
+      <width>441</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>隶书</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>词法单元序列</string>
+    </property>
+    <widget class="QTextBrowser" name="textBrowser_lex">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>401</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MV Boli</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_lex">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>290</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>保存</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_start">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>440</y>
+      <width>181</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>华文行楷</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 127);</string>
+    </property>
+    <property name="text">
+     <string>语法分析</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_action_goto_table">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>720</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bradley Hand ITC</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Action Goto 表</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_process">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>710</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>华文新魏</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>移进-归约 过程</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_items_2">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>550</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>华文楷体</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>文法项目</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_productions">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>550</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>华文仿宋</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>文法产生式</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_symbols">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>630</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>文法符号</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1740</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="GUI_Parser.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_code</sender>
+   <signal>clicked()</signal>
+   <receiver>GUI_ParserClass</receiver>
+   <slot>save_code_to_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>331</x>
+     <y>307</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>406</x>
+     <y>58</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_grammar</sender>
+   <signal>clicked()</signal>
+   <receiver>GUI_ParserClass</receiver>
+   <slot>save_grammar_to_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>287</x>
+     <y>709</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>407</x>
+     <y>774</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_lex</sender>
+   <signal>clicked()</signal>
+   <receiver>GUI_ParserClass</receiver>
+   <slot>savelex_to_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>674</x>
+     <y>375</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>547</x>
+     <y>424</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_first</sender>
+   <signal>clicked()</signal>
+   <receiver>GUI_ParserClass</receiver>
+   <slot>save_first_to_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>973</x>
+     <y>748</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>712</x>
+     <y>808</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_items</sender>
+   <signal>clicked()</signal>
+   <receiver>GUI_ParserClass</receiver>
+   <slot>save_items_to_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1188</x>
+     <y>378</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>927</x>
+     <y>385</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_follow</sender>
+   <signal>clicked()</signal>
+   <receiver>GUI_ParserClass</receiver>
+   <slot>save_follow_to_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1261</x>
+     <y>734</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1088</x>
+     <y>814</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>textEdit_code</sender>
+   <signal>textChanged()</signal>
+   <receiver>GUI_ParserClass</receiver>
+   <slot>auto_save_code()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>227</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>475</x>
+     <y>316</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>textEdit_grammar</sender>
+   <signal>textChanged()</signal>
+   <receiver>GUI_ParserClass</receiver>
+   <slot>auto_save_grammar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>274</x>
+     <y>595</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>560</x>
+     <y>620</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_codeopen</sender>
+   <signal>clicked()</signal>
+   <receiver>GUI_ParserClass</receiver>
+   <slot>open_code_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>129</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>460</x>
+     <y>360</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_grammaropen</sender>
+   <signal>clicked()</signal>
+   <receiver>GUI_ParserClass</receiver>
+   <slot>open_grammar_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>148</x>
+     <y>706</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>147</x>
+     <y>778</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_start</sender>
+   <signal>clicked()</signal>
+   <receiver>GUI_ParserClass</receiver>
+   <slot>syntactic_analyze()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>627</x>
+     <y>511</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>652</x>
+     <y>715</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_productions</sender>
+   <signal>clicked()</signal>
+   <receiver>GUI_ParserClass</receiver>
+   <slot>show_productions()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>600</x>
+     <y>581</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>454</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_symbols</sender>
+   <signal>clicked()</signal>
+   <receiver>GUI_ParserClass</receiver>
+   <slot>show_symbols()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>572</x>
+     <y>651</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>554</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_action_goto_table</sender>
+   <signal>clicked()</signal>
+   <receiver>GUI_ParserClass</receiver>
+   <slot>show_action_goto_table()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>522</x>
+     <y>701</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>478</x>
+     <y>683</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_process</sender>
+   <signal>clicked()</signal>
+   <receiver>GUI_ParserClass</receiver>
+   <slot>show_analyze_process()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>740</x>
+     <y>722</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>546</x>
+     <y>721</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_items_2</sender>
+   <signal>clicked()</signal>
+   <receiver>GUI_ParserClass</receiver>
+   <slot>show_items()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>735</x>
+     <y>575</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>898</x>
+     <y>805</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>save_code_to_file()</slot>
+  <slot>save_grammar_to_file()</slot>
+  <slot>auto_save_grammar()</slot>
+  <slot>auto_save_code()</slot>
+  <slot>save_items_to_file()</slot>
+  <slot>save_follow_to_file()</slot>
+  <slot>save_first_to_file()</slot>
+  <slot>savelex_to_file()</slot>
+  <slot>open_grammar_file()</slot>
+  <slot>open_code_file()</slot>
+  <slot>syntactic_analyze()</slot>
+  <slot>show_action_goto_table()</slot>
+  <slot>show_analyze_process()</slot>
+  <slot>show_productions()</slot>
+  <slot>show_items()</slot>
+  <slot>show_symbols()</slot>
+ </slots>
+</ui>
